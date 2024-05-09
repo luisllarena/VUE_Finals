@@ -13,29 +13,24 @@
         <ul class="breadcrumb">
           <li class="breadcrumb__item breadcrumb__item--hide">
             <a href="" class="breadcrumb__link"
-              ><span class="breadcrumb__span">home</span></a
+              ><span class="breadcrumb__span">Home</span></a
             >
           </li>
           <li class="breadcrumb__item">
             <a href="" class="breadcrumb__link"
-              ><span class="breadcrumb__span">products</span></a
+              ><span class="breadcrumb__span">Pets</span></a
             >
           </li>
           <li class="breadcrumb__item">
             <a href="" class="breadcrumb__link"
               ><span class="breadcrumb__span"
-                >product number {{ $route.params.id }}</span
+                >Pet number {{ $route.params.id }}</span
               ></a
             >
           </li>
         </ul>
         <div class="product">
           <div class="product__header">
-            <div class="product__expiration">
-              <div class="count-down__timer" id="count-dowm__timer">
-                {{ diff }}
-              </div>
-            </div>
             <div class="product__row">
               <div class="prodcut__gallery">
                 <div class="gallery">
@@ -91,43 +86,16 @@
                 </div>
               </div>
               <div class="product__left">
-                <div class="product__category">web category</div>
+                <div class="product__category">Pets</div>
                 <div class="product__info">
                   <h1 class="product__title">{{ product?.name }}</h1>
-                  <div class="rating">
-                    <div class="rating__star">
-                      <span
-                        class="rating__rate"
-                        :data-title="rate.title"
-                        v-for="rate in ratings"
-                        :key="rate.title"
-                        @click="rateWidth = rate.width"
-                        @mouseover="handleMouseover"
-                        @mouseleave="handleMouseleave"
-                      ></span>
-                    </div>
-                    <div
-                      class="rating__fstar"
-                      :style="showRate ? `width: ${rateWidth}%` : ''"
-                    >
-                      <span class="rating__frate"></span>
-                      <span class="rating__frate"></span>
-                      <span class="rating__frate"></span>
-                      <span class="rating__frate"></span>
-                      <span class="rating__frate"></span>
-                    </div>
-                  </div>
-                  <div class="rating-star">
-                    4.5
-                    <span class="rating__num">(65)</span>
-                  </div>
                 </div>
                 <div>
                   <button
                     class="btn btn--boxshadow btn--brand"
                     @click="addItem(product)"
                   >
-                    add to cart
+                    Add to Cart
                   </button>
                 </div>
                 <div class="controls"></div>
@@ -136,7 +104,7 @@
           </div>
         </div>
         <SwiperSlider v-if="products.length">
-          <template v-slot:title> Related products </template>
+          <template v-slot:title> Other Pets </template>
           <router-link
             :to="{ name: 'Product', params: { id: 1 } }"
             class="swiper-slide"
