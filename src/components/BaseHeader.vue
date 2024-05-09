@@ -95,14 +95,7 @@
                 <a
                   href="https://google.com"
                   class="navbar__link"
-                  >Toys & Accessories</a
-                >
-              </li>
-              <li class="navbar__item">
-                <a
-                  href="https://github.com/Tefoh/vue-ecommerce-template"
-                  class="navbar__link"
-                  >Contact us(github)</a
+                  >Pets</a
                 >
               </li>
             </ul>
