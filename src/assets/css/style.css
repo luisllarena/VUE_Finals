@@ -138,9 +138,7 @@ ul li {
     font-size: 15px;
 }
 
-.navbar__link--is-active {
-    color: #e78747;
-}
+
 
 .navbar__item {
     position: relative;
@@ -2017,3 +2015,24 @@ table tbody tr:nth-child(2n+1) {
 .account__router{
     color: #36b3fb;
 }
+
+.about {
+    margin: 20px; /* Adjust margin as needed */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f9f9f9; /* Change background color */
+    border-radius: 10px; /* Add border radius for a rounded look */
+  }
+  
+  .about h1 {
+    font-size: 32px; /* Adjust heading font size */
+    color: #333; /* Change heading color */
+    margin-bottom: 20px; /* Adjust margin bottom as needed */
+  }
+  
+  .about p {
+    font-size: 16px; /* Adjust paragraph font size */
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: #000; /* Change paragraph color */
+    margin-bottom: 15px; /* Adjust margin bottom as needed */
+  }
+  

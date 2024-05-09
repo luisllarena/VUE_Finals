@@ -33,7 +33,7 @@
                 :class="{ 'box--togglable': !isBrandOpen }"
                 @click="isBrandOpen = !isBrandOpen"
               >
-                brands
+                Sizes
               </div>
               <div class="box__filter" v-show="isBrandOpen">
                 <div class="box__content-container">
@@ -42,52 +42,52 @@
                       <li class="box__li">
                         <label
                           class="ui-checkbox"
-                          data-fa="samsung"
-                          data-en="Sumsung"
-                          data-serach="Sumsung samsung"
+                          data-fa="Big"
+                          data-en="Big"
+                          data-serach="Big"
                         >
                           <input
                             type="checkbox"
                             class="ui-checkbox__input"
-                            value="samsung"
+                            value="big"
                             v-model="selectedFilters"
                           />
                           <span class="ui-checkbox__mark"></span>
-                          samsung
+                          Big
                         </label>
                       </li>
                       <li class="box__li">
                         <label
                           class="ui-checkbox"
-                          data-fa="sony"
-                          data-en="sony"
-                          data-serach="sony sony"
+                          data-fa="Medium"
+                          data-en="Medium"
+                          data-serach="Medium"
                         >
                           <input
                             type="checkbox"
                             class="ui-checkbox__input"
-                            value="sony"
+                            value="Medium"
                             v-model="selectedFilters"
                           />
                           <span class="ui-checkbox__mark"></span>
-                          sony
+                          Medium
                         </label>
                       </li>
                       <li class="box__li">
                         <label
                           class="ui-checkbox"
-                          data-fa="apple"
-                          data-en="apple"
-                          data-serach="apple apple"
+                          data-fa="Small"
+                          data-en="Small"
+                          data-serach="Small"
                         >
                           <input
                             type="checkbox"
                             class="ui-checkbox__input"
-                            value="apple"
+                            value="Small"
                             v-model="selectedFilters"
                           />
                           <span class="ui-checkbox__mark"></span>
-                          apple
+                          Small
                         </label>
                       </li>
                     </ul>
@@ -97,76 +97,11 @@
             </div>
           </div>
           <div class="box">
-            <div class="box__row">
-              <div
-                class="box__header"
-                :class="{ 'box--togglable': !isColorOpen }"
-                @click="isColorOpen = !isColorOpen"
-              >
-                colors
-              </div>
-              <div class="box__filter" v-show="isColorOpen">
-                <div class="box__content-container">
-                  <div class="box__content">
-                    <ul class="box__ul">
-                      <li class="box__li">
-                        <label
-                          class="ui-checkbox"
-                          data-fa="black"
-                          data-serach="balck black"
-                        >
-                          <input
-                            type="checkbox"
-                            class="ui-checkbox__input"
-                            value="black"
-                            v-model="selectedFilters"
-                          />
-                          <span class="ui-checkbox__mark"></span>
-                          black
-                          <span
-                            class="filter__color"
-                            style="background: rgb(0, 0, 0)"
-                          ></span>
-                        </label>
-                      </li>
-                      <li class="box__li">
-                        <label
-                          class="ui-checkbox"
-                          data-fa="blue"
-                          data-serach="blue blue"
-                        >
-                          <input
-                            type="checkbox"
-                            class="ui-checkbox__input"
-                            value="blue"
-                            v-model="selectedFilters"
-                          />
-                          <span class="ui-checkbox__mark"></span>
-                          blue
-                          <span
-                            class="filter__color"
-                            style="background: rgb(0, 0, 255)"
-                          ></span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="box box--switcher">
-            <label class="ui-switcher">
-              <input type="checkbox" class="ui-switcher__input" />
-              <span class="ui-switcher__slider">
-                <span class="ui-switcher__toggle"></span>
-              </span>
-              only in stock
-            </label>
-          </div>
+
         </div>
         <div class="page__content">
-          <h1>user name: (store) {{ userName }}</h1>
+          <h1>Pets</h1>
           <ul class="breadcrumb">
             <li class="breadcrumb__item breadcrumb__item--hide">
               <a href="" class="breadcrumb__link"
@@ -175,7 +110,7 @@
             </li>
             <li class="breadcrumb__item">
               <a href="" class="breadcrumb__link"
-                ><span class="breadcrumb__span">products</span></a
+                ><span class="breadcrumb__span">pets</span></a
               >
             </li>
           </ul>
@@ -202,7 +137,6 @@
                     formattedPrice(item.price)
                   }}</span>
                 </div>
-                <span class="card__discount">%6</span>
               </div>
             </router-link>
           </div>

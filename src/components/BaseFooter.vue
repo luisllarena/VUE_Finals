@@ -29,11 +29,11 @@
           <p class="footer__txt">
             © 2024 Pet Pals Paradise. All rights reserved.
 
-All content, including text, images, graphics, and other materials on this website, is the property of Pet Pals Paradise or its content suppliers and is protected by United States and international copyright laws. The compilation of all content on this site is the exclusive property of [Your Website Name] and protected by U.S. and international copyright laws.
+All content, including text, images, graphics, and other materials on this website, is the property of Pet Pals Paradise or its content suppliers and is protected by United States and international copyright laws. The compilation of all content on this site is the exclusive property of PetPals and protected by U.S. and international copyright laws.
 
 Unauthorized use, reproduction, or distribution of any content from this site is strictly prohibited. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products, or services obtained from this website.
 
-For inquiries regarding the use of content from this website, please contact at petpalsparadise@gmai.com
+For inquiries regarding the use of content from this website, please contact at petpalsparadise@gmail.com
           </p>
         </div>
       </div>

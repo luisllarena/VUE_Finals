@@ -20,82 +20,18 @@
               <li class="navbar__item">
                 <router-link
                   :to="{ name: 'Home' }"
-                  class="navbar__link navbar__link--is-active"
+                  class="navbar__link"
                   >Home</router-link
                 >
               </li>
-              <li class="navbar__item navbar__item--has-sub">
-                <a @click.prevent href="" class="navbar__link">Foods & Treats</a>
-                <ul class="navbar__subset">
-                  <li class="navbar__item">
-                    <router-link :to="{ name: 'Category' }" class="navbar__link"
-                      >Menu 1</router-link
-                    >
-                  </li>
-                  <li class="navbar__item">
-                    <router-link :to="{ name: 'Category' }" class="navbar__link"
-                      >Menu 2</router-link
-                    >
-                  </li>
-                  <li class="navbar__item navbar__item--has-sub">
-                    <router-link :to="{ name: 'Category' }" class="navbar__link"
-                      >Menu 3</router-link
-                    >
-                    <ul class="navbar__subset">
-                      <li class="navbar__item">
-                        <router-link
-                          :to="{ name: 'Category' }"
-                          class="navbar__link"
-                          >Menu 1</router-link
-                        >
-                      </li>
-                      <li class="navbar__item">
-                        <router-link
-                          :to="{ name: 'Category' }"
-                          class="navbar__link"
-                          >Menu 2</router-link
-                        >
-                      </li>
-                      <li class="navbar__item navbar__item--has-sub">
-                        <a href="" class="navbar__link">Menu 3</a>
-                        <ul class="navbar__subset">
-                          <li class="navbar__item">
-                            <router-link
-                              :to="{ name: 'Category' }"
-                              class="navbar__link"
-                              >Menu 1</router-link
-                            >
-                          </li>
-                          <li class="navbar__item">
-                            <router-link
-                              :to="{ name: 'Category' }"
-                              class="navbar__link"
-                              >Menu 2</router-link
-                            >
-                          </li>
-                          <li class="navbar__item">
-                            <router-link
-                              :to="{ name: 'Category' }"
-                              class="navbar__link"
-                              >Menu 3</router-link
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
               <li class="navbar__item">
-                <router-link :to="{ name: 'About' }" class="navbar__link"
-                  >Grooming</router-link
+                <router-link :to="{ name: 'Category' }" class="navbar__link"
+                  >Pets</router-link
                 >
               </li>
               <li class="navbar__item">
-                <a
-                  href="https://google.com"
-                  class="navbar__link"
-                  >Pets</a
+                <router-link :to="{ name: 'About' }" class="navbar__link"
+                  >About Us</router-link
                 >
               </li>
             </ul>
