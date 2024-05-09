@@ -3,8 +3,8 @@
     <div class="container">
       <div class="header__top">
         <div class="header__top-content">
-          <h1 class="header__top-h1">spacody - webamooz</h1>
-          <p class="header__top-p">be professional</p>
+          <h1 class="header__top-h1">Pet Pals Paradise</h1>
+          <p class="header__top-p">Purr-fect Pets Await! Shop Tail-Wagging Deals Meow!</p>
         </div>
         <form class="header__form">
           <div class="header__search">
@@ -49,7 +49,7 @@
         </div>
       </div>
       <SwiperSlider v-if="products.length">
-        <template #title> Mobile</template>
+        <template #title>Pets</template>
         <router-link
           :to="{ name: 'Product', params: { id: 1 } }"
           class="swiper-slide"

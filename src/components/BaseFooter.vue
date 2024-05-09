@@ -7,12 +7,14 @@
           <div class="footer__getcall">
             <img src="img/tamasbama.png" alt="" />
             <div class="footer__getcall-info">
-              <h3 class="footer__getcall-h3">contact us</h3>
-              <span class="gooter__getcall-span">any questions? ask us !</span>
+              <h3 class="footer__getcall-h3">Contact Us</h3>
+              <span class="gooter__getcall-span">Any questions? Ask us!</span>
             </div>
           </div>
           <div class="footer__info">
-            <span class="footer__info-span">Email : info@domian.com</span>
+            <span class="footer__info-span">Email: petpalsparadise@gmail.com</span>
+            <br>
+            <br>
             <span class="footer__info-span margin--right-10">
               Tel : 1023233030</span
             >

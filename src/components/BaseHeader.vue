@@ -21,11 +21,11 @@
                 <router-link
                   :to="{ name: 'Home' }"
                   class="navbar__link navbar__link--is-active"
-                  >home</router-link
+                  >Home</router-link
                 >
               </li>
               <li class="navbar__item navbar__item--has-sub">
-                <a @click.prevent href="" class="navbar__link">Categories</a>
+                <a @click.prevent href="" class="navbar__link">Foods & Treats</a>
                 <ul class="navbar__subset">
                   <li class="navbar__item">
                     <router-link :to="{ name: 'Category' }" class="navbar__link"
@@ -88,7 +88,14 @@
               </li>
               <li class="navbar__item">
                 <router-link :to="{ name: 'About' }" class="navbar__link"
-                  >About us</router-link
+                  >Grooming</router-link
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="https://google.com"
+                  class="navbar__link"
+                  >Toys & Accessories</a
                 >
               </li>
               <li class="navbar__item">
