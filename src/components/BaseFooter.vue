@@ -5,7 +5,7 @@
       <div class="container">
         <div class="footer__row">
           <div class="footer__getcall">
-            <img src="img/tamasbama.png" alt="" />
+            <img src="img/orange.jpg" alt="" />
             <div class="footer__getcall-info">
               <h3 class="footer__getcall-h3">Contact Us</h3>
               <span class="gooter__getcall-span">Any questions? Ask us!</span>
@@ -24,21 +24,16 @@
     </div>
     <div class="footer__main">
       <div class="container">
-        <div class="footer__links">
-          <a href="" class="footer__link">Link 1</a>
-          <a href="" class="footer__link">Link 1</a>
-          <a href="" class="footer__link">Link 1</a>
-          <a href="" class="footer__link">Link 1</a>
-          <a href="" class="footer__link">Link 1</a>
-          <a href="" class="footer__link">Link 1</a>
-        </div>
         <div class="footer__hr"></div>
         <div class="footer__about">
           <p class="footer__txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            esse ipsa sed illum, distinctio voluptatem illo accusantium,
-            mollitia voluptatibus tempora magni provident aut corporis? Est
-            molestias adipisci labore nihil consequatur.
+            © 2024 Pet Pals Paradise. All rights reserved.
+
+All content, including text, images, graphics, and other materials on this website, is the property of Pet Pals Paradise or its content suppliers and is protected by United States and international copyright laws. The compilation of all content on this site is the exclusive property of [Your Website Name] and protected by U.S. and international copyright laws.
+
+Unauthorized use, reproduction, or distribution of any content from this site is strictly prohibited. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products, or services obtained from this website.
+
+For inquiries regarding the use of content from this website, please contact at petpalsparadise@gmai.com
           </p>
         </div>
       </div>

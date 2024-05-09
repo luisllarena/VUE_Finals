@@ -776,7 +776,7 @@ ul li {
 }
 
 .footer__hr {
-    marin: 0 10%;
+    margin: 0 10%;
     border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -793,7 +793,7 @@ ul li {
 }
 
 .footer__team {
-    background: #46b1ef;
+    background: #e78747;
     text-align: center;
     color: rgba(255, 255, 255, .6);
     padding: 15px 0;
