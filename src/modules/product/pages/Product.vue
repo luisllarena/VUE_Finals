@@ -136,9 +136,7 @@ export default {
       dateCountDown: moment('2021-08-07 00:00:00'),
       diff: null,
       countDownInterval: null,
-      gallerySlides: [
-        { img: require('@/assets/labra.jpg') },
-      ],
+      gallerySlides: [], // Update this array dynamically
       ratings: [
         { width: 100, title: 'awesome' },
         { width: 80, title: 'good' },
@@ -236,6 +234,9 @@ export default {
       name: productName,
       img: productImg
     }
+
+    // Dynamically set gallerySlides based on productImg
+    this.gallerySlides = [{ img: productImg }];
   },
 
   unmounted() {
