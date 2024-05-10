@@ -103,32 +103,6 @@
             </div>
           </div>
         </div>
-        <SwiperSlider v-if="products.length">
-          <template v-slot:title> Other Pets </template>
-          <router-link
-            :to="{ name: 'Product', params: { id: 1 } }"
-            class="swiper-slide"
-            v-for="item in products"
-            :key="item.id"
-          >
-            <div class="card">
-              <div class="card__image">
-                <img
-                  :src="require(`@/assets/img/slider/${item.id}.jpg`)"
-                  alt=""
-                  class="card__img"
-                />
-              </div>
-              <div class="card__title2">{{ item.name }}</div>
-              <div class="card__price">
-                <span class="card__total-price">{{
-                  formattedPrice(item.price)
-                }}</span>
-              </div>
-              <span class="card__discount">%6</span>
-            </div>
-          </router-link>
-        </SwiperSlider>
         <div class="product-details">
           <div class="tab">
             <div class="tab__items">
@@ -204,14 +178,9 @@ export default {
       diff: null,
       countDownInterval: null,
       gallerySlides: [
-        { img: require('@/assets/img/slider/1.jpg') },
+        { img: require('@/assets/chua.jpg') },
         { img: require('@/assets/img/slider/2.jpg') },
         { img: require('@/assets/img/slider/3.jpg') },
-        { img: require('@/assets/img/slider/4.jpg') },
-        { img: require('@/assets/img/slider/4.jpg') },
-        { img: require('@/assets/img/slider/3.jpg') },
-        { img: require('@/assets/img/slider/3.jpg') },
-        { img: require('@/assets/img/slider/3.jpg') }
       ],
       ratings: [
         { width: 100, title: 'awesome' },

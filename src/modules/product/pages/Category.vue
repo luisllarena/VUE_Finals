@@ -52,7 +52,7 @@ export default {
     selectedFilters: [],
     hardcodedProducts: [
       { id: 1, name: 'Labrador', price: 50000.00, image: '@/assets/img/slider/1.jpg' },
-      { id: 2, name: 'Chihuahua', price: 35000.00, image: '@/assets/img/slider/2.jpg' },
+      { id: 2, name: 'Chihuahua', price: 35000.00, img: '@/assets/img/slider/vff.jpg' },
       { id: 3, name: 'Japanese Spitz', price: 48000.00, image: '@/assets/img/slider/3.jpg' },
       // Add more hardcoded products as needed
     ]
