@@ -103,47 +103,6 @@
             </div>
           </div>
         </div>
-        <div class="product-details">
-          <div class="tab">
-            <div class="tab__items">
-              <span
-                class="tab__item tab__item--compare"
-                :class="{ 'tab__item--is-active': activeTab === 'compare' }"
-                @click="activeTab = 'compare'"
-                >Review</span
-              >
-              <span
-                class="tab__item tab__item--featrues"
-                :class="{ 'tab__item--is-active': activeTab === 'featrues' }"
-                @click="activeTab = 'featrues'"
-                >Attributes</span
-              >
-              <span
-                class="tab__item tab__item--comments"
-                :class="{ 'tab__item--is-active': activeTab === 'comments' }"
-                @click="activeTab = 'comments'"
-                >Comments</span
-              >
-            </div>
-            <div class="tab__sections">
-              <CompareTab
-                :style="
-                  activeTab === 'compare' ? 'display:block;' : 'display:none;'
-                "
-              />
-              <FeaturesTab
-                :style="
-                  activeTab === 'featrues' ? 'display:block;' : 'display:none;'
-                "
-              />
-              <CommentsTab
-                :style="
-                  activeTab === 'comments' ? 'display:block;' : 'display:none;'
-                "
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </main>
   </div>
@@ -178,9 +137,7 @@ export default {
       diff: null,
       countDownInterval: null,
       gallerySlides: [
-        { img: require('@/assets/chua.jpg') },
-        { img: require('@/assets/img/slider/2.jpg') },
-        { img: require('@/assets/img/slider/3.jpg') },
+        { img: require('@/assets/labra.jpg') },
       ],
       ratings: [
         { width: 100, title: 'awesome' },
@@ -252,14 +209,14 @@ export default {
     formattedPrice(price) {
       return new Intl.NumberFormat('en', {
         style: 'currency',
-        currency: 'USD'
+        currency: 'PHP'
       }).format(price)
     },
     ...mapMutations('products', [SET_PRODUCTS_MUTATIONS]),
     ...mapActions('cart', ['addItem'])
   },
 
-  async created() {
+  created() {
     this.countDownInterval = setInterval(() => {
       let diffTime = this.dateCountDown.diff(moment())
       let durationTime = moment.duration(diffTime)
@@ -268,19 +225,16 @@ export default {
       )}:${durationTime.hours()}:${durationTime.minutes()}:${durationTime.seconds()}`
     }, 1000)
 
-    this.product = this.$store.getters['products/getProductById'](
-      parseInt(this.$route.params.id)
-    )
+    // Retrieve product details from route params
+    const productId = parseInt(this.$route.params.id)
+    const productName = this.$route.params.name
+    const productImg = this.$route.params.img
 
-    if (!this.product) {
-      const { data } = await axios.get(
-        'https://gist.githubusercontent.com/Tefoh/57a0ef76ab63a974105b9f0fbcb8475b/raw/d49e3d8104992ff6cc6742fbe91b0c642287837a/products.json'
-      )
-
-      this.SET_PRODUCTS(data)
-      this.product = this.$store.getters['products/getProductById'](
-        parseInt(this.$route.params.id)
-      )
+    // Set the product object with retrieved details
+    this.product = {
+      id: productId,
+      name: productName,
+      img: productImg
     }
   },
 

@@ -13,7 +13,7 @@
         <div class="products">
           <!-- Hardcoded products -->
           <router-link
-            :to="{ name: 'Product', params: { id: item.id } }"
+            :to="{ name: 'Product', params: { id: item.id, name: item.name, img: item.img } }"
             v-for="(item, index) in hardcodedProducts"
             :key="item.id"
             class="products__item"
@@ -21,7 +21,7 @@
             <div class="card">
               <div class="card__image">
                 <img
-                  :src="item.image"
+                  :src="item.img"
                   alt=""
                   class="card__img"
                 />
@@ -46,30 +46,33 @@
 export default {
   name: 'Category',
 
-  data: () => ({
-    isBrandOpen: true,
-    isColorOpen: true,
-    selectedFilters: [],
-    hardcodedProducts: [
-      { id: 1, name: 'Labrador', price: 50000.00, image: '@/assets/img/slider/1.jpg' },
-      { id: 2, name: 'Chihuahua', price: 35000.00, img: '@/assets/img/slider/vff.jpg' },
-      { id: 3, name: 'Japanese Spitz', price: 48000.00, image: '@/assets/img/slider/3.jpg' },
-      // Add more hardcoded products as needed
-    ]
-  }),
+  data() {
+    return {
+      isBrandOpen: true,
+      isColorOpen: true,
+      selectedFilters: [],
+      hardcodedProducts: [
+        { id: 1, name: 'Labrador', price: 50000.00, img: require('@/assets/labra.jpg') },
+        { id: 2, name: 'Chihuahua', price: 35000.00, img: require('@/assets/chua.jpg') },
+        { id: 3, name: 'Japanese Spitz', price: 48000.00, img: require('@/assets/jap.jpg') },
+        { id: 4, name: 'Black Labrador', price: 48000.00, img: require('@/assets/blacklab.jpg') },
+        // Add more hardcoded products as needed
+      ]
+    };
+  },
 
   methods: {
     removeAll() {
-      this.selectedFilters = []
+      this.selectedFilters = [];
     },
     formattedPrice(price) {
       return new Intl.NumberFormat('en', {
         style: 'currency',
         currency: 'PHP'
-      }).format(price)
+      }).format(price);
     }
   }
-}
+};
 </script>
 
 <style></style>

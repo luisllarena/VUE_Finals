@@ -67,7 +67,7 @@ export default {
     formattedPrice(price) {
       return new Intl.NumberFormat('en', {
         style: 'currency',
-        currency: 'USD'
+        currency: 'PHP'
       }).format(price)
     }
   }

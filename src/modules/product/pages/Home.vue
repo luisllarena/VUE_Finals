@@ -6,18 +6,6 @@
           <h1 class="header__top-h1">Pet Pals Paradise</h1>
           <p class="header__top-p">Purr-fect Pets Await! Shop Tail-Wagging Deals Meow!</p>
         </div>
-        <form class="header__form">
-          <div class="header__search">
-            <input
-              type="text"
-              class="header__serach-input"
-              placeholder="search..."
-            />
-            <button
-              class="header__search-btn btn btn--brand btn--boxshadow"
-            ></button>
-          </div>
-        </form>
       </div>
       <div class="slideshow">
         <a
@@ -48,32 +36,6 @@
           </div>
         </div>
       </div>
-      <SwiperSlider v-if="products.length">
-        <template #title>Pets</template>
-        <router-link
-          :to="{ name: 'Product', params: { id: 1 } }"
-          class="swiper-slide"
-          v-for="item in products"
-          :key="item.id"
-        >
-          <div class="card">
-            <div class="card__image">
-              <img
-                :src="require(`@/assets/img/slider/${item.id}.jpg`)"
-                alt=""
-                class="card__img"
-              />
-            </div>
-            <div class="card__title2">{{ item.name }}</div>
-            <div class="card__price">
-              <span class="card__total-price">{{
-                formattedPrice(item.price)
-              }}</span>
-            </div>
-            <span class="card__discount">%6</span>
-          </div>
-        </router-link>
-      </SwiperSlider>
     </div>
   </main>
 </template>
@@ -121,7 +83,7 @@ export default {
     formattedPrice(price) {
       return new Intl.NumberFormat('en', {
         style: 'currency',
-        currency: 'USD'
+        currency: 'PHP'
       }).format(price)
     }
   },
