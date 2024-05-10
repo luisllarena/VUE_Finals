@@ -64,7 +64,7 @@
                     <div class="header__basket-details">
                       <h5>
                         <a class="header__basket-title" href=""
-                          >{{ item.name }} ({{ item.quantity }})</a
+                          >{{ item.name }}</a
                         >
                       </h5>
                       <div class="header__basket-price">

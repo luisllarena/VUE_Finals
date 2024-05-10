@@ -19,38 +19,7 @@
             {{ item.name }}
           </router-link>
         </h5>
-        <p>price: {{ formattedPrice(item.price) }}</p>
-        <div class="cart__deatils-code">
-          quantity in cart :{{ item.quantity }}
-        </div>
-      </div>
-      <div class="cart__amounts">
-        <div class="cart__amounts-div">
-          <input
-            type="number"
-            class="txt"
-            placeholder="quantity"
-            v-model.number="quantity"
-            max="1000"
-            min="1"
-          />
-          <button
-            @click="changeQuantity({ product: item, quantity })"
-            class="btn btn--brand btn--boxshadow"
-            style="margin-right: 1rem"
-            type="button"
-          >
-            set to cart
-          </button>
-          <button
-            type="button"
-            @click="removeItem(item)"
-            class="cart__amounts-remove"
-            style="cursor: pointer"
-          >
-            remove
-          </button>
-        </div>
+        <p>price: {{ formattedPrice(item.price) }}</p>  
       </div>
       <div class="cart__total">
         <div class="cart__total-div">
