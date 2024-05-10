@@ -90,6 +90,9 @@
                 <div class="product__info">
                   <h1 class="product__title">{{ product?.name }}</h1>
                 </div>
+                <div class="product__info">
+                  <h1 class="product__title">{{ product?.desc }}</h1>
+                </div>
                 <div>
                   <button
                     class="btn btn--boxshadow btn--brand"
@@ -227,12 +230,14 @@ export default {
     const productId = parseInt(this.$route.params.id)
     const productName = this.$route.params.name
     const productImg = this.$route.params.img
+    const productDesc = this.$route.params.desc
 
     // Set the product object with retrieved details
     this.product = {
       id: productId,
       name: productName,
-      img: productImg
+      img: productImg,
+      desc: productDesc
     }
 
     // Dynamically set gallerySlides based on productImg

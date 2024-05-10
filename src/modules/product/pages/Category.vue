@@ -52,10 +52,10 @@ export default {
       isColorOpen: true,
       selectedFilters: [],
       hardcodedProducts: [
-        { id: 1, name: 'Labrador', price: 50000.00, img: require('@/assets/labra.jpg') },
-        { id: 2, name: 'Chihuahua', price: 35000.00, img: require('@/assets/chua.jpg') },
-        { id: 3, name: 'Japanese Spitz', price: 48000.00, img: require('@/assets/jap.jpg') },
-        { id: 4, name: 'Black Labrador', price: 48000.00, img: require('@/assets/blacklab.jpg') },
+        { id: 1, name: 'Dave the Labrador', price: 50000.00, img: require('@/assets/labra.jpg'), desc: 'hello i am a labrador'},
+        { id: 2, name: 'Lucy the Chihuahua', price: 35000.00, img: require('@/assets/chua.jpg') },
+        { id: 3, name: 'Odie the Japanese Spitz', price: 48000.00, img: require('@/assets/jap.jpg') },
+        { id: 4, name: 'Yumi the Black Labrador', price: 48000.00, img: require('@/assets/blacklab.jpg') },
         // Add more hardcoded products as needed
       ]
     };
